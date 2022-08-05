@@ -19,21 +19,19 @@ public class LionTest {
     @Test
     public void doesHaveManeForMaleReturnsCorrectValue () throws Exception {
         Lion lion = new Lion("Самец", feline);
-        boolean expectedHasMane = true;
 
         boolean actualHasMane = lion.doesHaveMane();
 
-        Assert.assertEquals(expectedHasMane, actualHasMane);
+        Assert.assertTrue(actualHasMane);
     }
 
     @Test
     public void doesHaveManeForFemaleReturnsCorrectValue() throws Exception {
         Lion lion = new Lion("Самка", feline);
-        boolean expectedHasMane = false;
 
         boolean actualHasMane = lion.doesHaveMane();
 
-        Assert.assertEquals(expectedHasMane, actualHasMane);
+        Assert.assertFalse(actualHasMane);
     }
 
     @Test
