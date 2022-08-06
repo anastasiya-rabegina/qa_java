@@ -35,7 +35,7 @@ public class LionTest {
     }
 
     @Test
-    public void LionConstructionThrowException() {
+    public void lionConstructionThrowException() {
         String expectedExceptionText = "Используйте допустимые значения пола животного - самей или самка";
         Exception exception = null;
 
